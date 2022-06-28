@@ -8,6 +8,5 @@ Permet de comprendre:
 le changement sans rupture de service
 
 Les annotations de la route a ajouter sont:
-
-haproxy.router.openshift.io/balance         valeur roundrobin
-haproxy.router.openshift.io/disable_cookies valeur true
+haproxy.router.openshift.io/balance avec la valeur roundrobin
+haproxy.router.openshift.io/disable_cookies avec la valeur true
