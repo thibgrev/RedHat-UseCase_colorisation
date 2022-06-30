@@ -1,20 +1,22 @@
 <!doctype html>
-<title>Hello from Flask</title>
-<body style="background: {{ color }};"></body>
-<div style="color: #e4e4e4;
-    text-align:  center;
-    height: 90px;
-    vertical-align:  middle;">
-{% if name %}
-  <h1>Hello from {{ name }}!</h1>
-{% else %}
-  <h1>Hello, World!</h1>
-{% endif %}
+<title>
+    <b>Application changement de type de route</b>
+    <hr>
+</title>
+<body style="background: {{ color }};">
+    Idée: comprendre que la requete web est prise en charge par tous les conteneurs.
+    Il n'y a plus de sticy session: un conteneur prendra toujours en charge la requete web (Pas de changement de conteneur) 
+</body>
+<div style="color: #e4e4e4; text-align:  center; height: 90px; vertical-align:  middle;">
+    {% if name %}
+      <h1>Hello from {{ name }}!</h1>
+    {% else %}
+      <h1>Hello, World!</h1>
+    {% endif %}
 
-  {% if contents %}
-  <textarea rows="10" cols="50">
-    {{ contents }}
-  </textarea>
-  {% endif %}
-
+      {% if contents %}
+      <textarea rows="10" cols="50">
+        {{ contents }}
+      </textarea>
+      {% endif %}
 </div>
